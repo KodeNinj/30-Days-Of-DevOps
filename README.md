@@ -21,7 +21,8 @@ VCT - VISIT
 PID - PYD
 
 ```
-- Validate: the project structure and verifies if all necessary information are available such as images files, icon, plugins, etc
+- Validate: the project structure and verifies if all necessary information are available
+This include images files, icon, plugins, etc
 - Compile: the code after checking for syntax error
 - Test: run unit test on the compiled project
 - Package: into a distributed format called artifact (JAR, WAR, APK)
