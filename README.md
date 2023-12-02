@@ -15,6 +15,7 @@ Maven is used for the building of the project after developers finish coding. It
 
 - Clean Lifecycle: This removes previous build logs from the history.
 - Default Lidecycle: This involves various actions. It is the default actions that is involved in compiling and deployment of the package to a remote repository for sharing with others and environments.
+  -- Validate
 
 ```
 - Validat
