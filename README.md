@@ -17,8 +17,9 @@ Maven is used for the building of the project after developers finish coding. It
 - Default Lidecycle: This involves various actions. It is the default actions that is involved in compiling and deployment of the package to a remote repository for sharing with others and environments.
 
 use this Pneumonics
-VCT - VISIT
-PID - PYD
+
+- VCT - VISIT
+- PID - PYD
 
 ```
 - Validate: the project structure and verifies if all necessary information are available
