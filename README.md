@@ -16,14 +16,25 @@ Maven is used for the building of the project after developers finish coding. It
 - Clean Lifecycle: This removes previous build logs from the history.
 - Default Lidecycle: This involves various actions. It is the default actions that is involved in compiling and deployment of the package to a remote repository for sharing with others and environments.
 
--- Validate
+use this Pneumonics
+VCT - VISIT
+PID - PYD
 
 ```
-- Validat
-- Compile
-- Test
-- Package
-- Install
-- Deploy
+- Validate: the project structure and verifies if all necessary information are available such as images files, icon, plugins, etc
+- Compile: the code after checking for syntax error
+- Test: run unit test on the compiled project
+- Package: into a distributed format called artifact (JAR, WAR, APK)
+- Install: the package into a local repository (.m2)
+- Deploy: the artifact into a remote repository.
 
+NOTE: any command you run will always start from the Validate stage to that command you specify
 ```
+
+- Site Lifecycle: generate project documentation and report
+
+## HANDS-ON PROJECT
+
+Pre-requisites
+
+- AWS free tier account
