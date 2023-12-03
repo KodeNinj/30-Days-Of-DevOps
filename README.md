@@ -37,6 +37,30 @@ NOTE: any command you run will always start from the Validate stage to that comm
 
 ## HANDS-ON PROJECT
 
+```
 Pre-requisites
 
-- AWS free tier account
+- Setup an Ubuntu VM on Oracle VirtualBox or
+- Create an Ubuntu EC2 instance
+
+Any of these Two will work for this walkthrough
+
+```
+
+We will be working with Ubuntu on VM
+
+### Step one: update your apt-get
+
+The first thing to do after setting up your VM is to go to the terminal (on the vm) and update the apt-get. This is to update the package index files on the system, which contain information about available packages and their versions.
+
+Enter this code
+`sudo apt-get update`
+
+### Step two: Install java
+
+We are going to be working with a java application built on springboot framework. So, we will need to install Java on our machine same way we always install node on the system to run React applications.
+
+Enter this code
+`sudo apt install openjdk-11-jre -y`
+
+### step three: Install Maven
