@@ -49,12 +49,23 @@ cd conf
 
 Now edit the tomcat-users.xml file inside the 'conf' folder
 
+`vi tomcat-users.xml`
+
 What are we doing here? we need to add user details to the user list.
 
 ```
     <!-- copy and paste the code below into second to the last line -->
     <user username="admin" password="admin1234" roles="admin-gui, manager-gui"/>
+    <!-- You can change the username and password if you want -->
 
 ```
 
 This line of code is just adding a new user whose role could be admin or manager.
+
+We will need to remove/comment out the code below from the the `context.xml` located in these two folders: `apache-tomcat-9.0.65/webapps/manager/META-INF` and `apache-tomcat-9.0.65/webapps/host-manager/META-INF`
+
+```
+    <!-- Valve className="org.apache.catalina.valves.RemoteAddrValve"
+  allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
+
+```
