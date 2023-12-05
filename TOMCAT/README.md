@@ -13,3 +13,48 @@ Summary
 4. Run and access the webpage via port 8080
 
 ```
+
+## Setting Up Apache TOMCAT
+
+For the webserver, we will be using TOMCAT because our application is a Java-based app. Example of other servers include: NGINX, Apache HTTPS server.
+
+### Pre-requisite
+
+- set up a Ubuntu VM or AWS ubunu EC2 instance
+- Learn basic linux commands
+- Basic understanding of Maven setup and commands
+- A cup of cold milk/tea/coffee/soda
+
+### Step 1: Downloading Apache
+
+create an opt folder and change the directory into the folder
+
+`cd /opt`
+
+Now download the tomcat as tar.gz folder.
+
+`sudo wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.65/bin/apache-tomcat-9.0.65.tar.gz`
+
+This folder is in a somewhat zip file. We will need to unzip it.
+
+`sudo tar -xvf apache-tomcat-9.0.65.tar.gz`
+
+now cd into the extracted folder and navigate to /conf folder. You might need to change permission to -rw.
+
+```
+cd apache-tomcat-9.0.65
+cd conf
+
+```
+
+Now edit the tomcat-users.xml file inside the 'conf' folder
+
+What are we doing here? we need to add user details to the user list.
+
+```
+    <!-- copy and paste the code below into second to the last line -->
+    <user username="admin" password="admin1234" roles="admin-gui, manager-gui"/>
+
+```
+
+This line of code is just adding a new user whose role could be admin or manager.
