@@ -66,7 +66,5 @@ We will need to remove/comment out the code below from the the `context.xml` loc
 
 ```
 <!-- find this line of code and comment it out / or remove it completely -->
-    <!-- Valve className="org.apache.catalina.valves.RemoteAddrValve"
-  allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
-
+    <!-- Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
 ```
