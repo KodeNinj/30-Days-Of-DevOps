@@ -65,6 +65,7 @@ This line of code is just adding a new user whose role could be admin or manager
 We will need to remove/comment out the code below from the the `context.xml` located in these two folders: `apache-tomcat-9.0.65/webapps/manager/META-INF` and `apache-tomcat-9.0.65/webapps/host-manager/META-INF`
 
 ```
+<!-- find this line of code and comment it out / or remove it completely -->
     <!-- Valve className="org.apache.catalina.valves.RemoteAddrValve"
   allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /> -->
 
