@@ -75,27 +75,32 @@ Then start the Tomcat
 
 `./startup.sh`
 
-This line of code will start the Tomcat service and you can access it via ```localhost:8080```
+This line of code will start the Tomcat service and you can access it via `localhost:8080`
 
 ### Step 2: Using Maven to build Java application
+
 You might need to learn about maven from the previous folder
 
 The end result of this step is to convert/build our code into a package that can be run on the web browser (.war)
 
 - Clone the code repo to be built with Maven
+
 ```
         git clone https://github.com/jaiswaladi246/Petclinic.git
 
 ```
+
 - Navigate into the folder and build the repo into a runnable package
+
 ```
         cd Petclinic
         <!-- Ensure maven and Java has been installed. Checked the Maven section for how -->
         mvn clean package
 
 ```
-- Copy the built .war file into ``./apache-tomcat-9.0.65/webapps`` folder in your tom-cat
-- Go to your browser. it should already be running ```localhost:8080```
-- Access the Petclinic page by changing the URL to ```localhost:8080/Petclinic```
 
-Now, we have deployed our java application on TomCat server. 
+- Copy the built .war file into `./apache-tomcat-9.0.65/webapps` folder in your tom-cat
+- Go to your browser. it should already be running `localhost:8080`
+- Access the Petclinic page by changing the URL to `localhost:8080/Petclinic`
+
+Now, we have deployed our java application on TomCat server.
